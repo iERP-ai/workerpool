@@ -98,6 +98,9 @@ function setupBrowserWorker(script, Worker) {
 }
 
 function setupWorkerThreadWorker(script, WorkerThreads) {
+  // iERP adding fix for electron app deployment
+  script = script.replace('/app.asar/', '/app.asar.unpacked/');
+
   var worker = new WorkerThreads.Worker(script, {
     stdout: false, // automatically pipe worker.STDOUT to process.STDOUT
     stderr: false  // automatically pipe worker.STDERR to process.STDERR
