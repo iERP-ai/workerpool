@@ -19,12 +19,12 @@ jobs:
           scope: '@ierp-ai'
 
       # Install and build
-      - run: npm install -g yarn && yarn && yarn build
+      - run: npm install -g yarn && npm install && npm run build
 
       # Test and converage
-      - run: yarn test && yarn coverage
+      - run: npm test && npm run coverage
 
       # Publish 
-      - run: yarn publish
+      - run: npm config set scope "@ierp-ai" && npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.CI_GPR_TOKEN}}
