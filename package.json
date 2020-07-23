@@ -3,11 +3,11 @@
   "license": "Apache-2.0",
   "version": "6.0.0",
   "description": "Offload tasks to a pool of workers on node.js and in the browser",
-  "homepage": "https://github.com/josdejong/workerpool",
+  "homepage": "https://github.com/ierp-ai/workerpool",
   "author": "Jos de Jong <wjosdejong@gmail.com> (https://github.com/josdejong)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/josdejong/workerpool.git"
+    "url": "git://github.com/ierp-ai/workerpool.git"
   },
   "keywords": [
     "worker",
