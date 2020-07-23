@@ -19,10 +19,10 @@ jobs:
           scope: '@ierp-ai'
 
       # Install and build
-      - run: npm install -g yarn && npm build
+      - run: npm install -g yarn && npm install && npm run build
 
       # Test and converage
-      - run: npm test && npm coverage
+      - run: npm test && npm run coverage
 
       # Publish 
       - run: npm publish
