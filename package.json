@@ -1,5 +1,5 @@
 {
-  "name": "workerpool",
+  "name": "@ierp-ai/workerpool",
   "license": "Apache-2.0",
   "version": "6.0.0",
   "description": "Offload tasks to a pool of workers on node.js and in the browser",
@@ -46,5 +46,8 @@
     "uglify-js": "3.10.0",
     "webpack": "4.43.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
